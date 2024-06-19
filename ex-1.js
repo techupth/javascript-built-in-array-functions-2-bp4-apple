@@ -374,3 +374,7 @@ const bills = [
 ];
 
 // Start coding here
+let totalAmount = bills.reduce(function (accumulator, bill) {
+  return accumulator + bill.total;
+}, 0);
+ console.log(totalAmount);
