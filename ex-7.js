@@ -1,6 +1,9 @@
 function isPalindrome(string) {
-  // Start coding here
+  const lowerCaseString = string.toLowerCase();
+  const reversedString = lowerCaseString.split('').reverse().join('');
+  return lowerCaseString === reversedString;
 }
+
 
 //Example case
 console.log(isPalindrome("reviver"));// true
